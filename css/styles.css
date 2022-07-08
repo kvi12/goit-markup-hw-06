@@ -901,7 +901,7 @@ a {
   margin-top: -4px;
 }
 .modal-text-area:focus {
-  border-color: var(--accent-color);
+  border-color: currentColor;
 }
 .modal-field {
   margin-top: 20px;
