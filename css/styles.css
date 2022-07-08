@@ -903,10 +903,9 @@ a {
   letter-spacing: 0.01em;
   color: var(--second-title-color);
   margin-top: 10px;
-  fill: var(--accent-color);
 }
-.modal-text-area:focus {
-  border-color: currentColor;
+.modal-label:focus {
+  border-color: var(--accent-color);
 }
 .modal-field {
   margin-top: 10px;
