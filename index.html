@@ -32,11 +32,11 @@
           </nav>  
             <ul class="header-nav-list list">
               <li class="nav-item">
-                <a href="mailto:info@devstudio.com" class="nav-link"><svg class="header-mail-icon" width="16" height="12">
+                <a href="mailto:info@devstudio.com" class="nav-link-mail-tel"><svg class="header-mail-icon" width="16" height="12">
                     <use href="./images/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a>
               </li>
               <li>
-                <a href="tel:+38096111111" class="nav-link"><svg class="header-telephone-icon" width="10" height="16">
+                <a href="tel:+38096111111" class="nav-link-mail-tel"><svg class="header-telephone-icon" width="10" height="16">
                     <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+380961111111</a>
               </li>
             </ul>
@@ -413,8 +413,8 @@
                     </ul>
               </div>
               <div class="footer-email-input">
+                <b class="title-email-input">подпишитесь на рассылку</b>
                 <form class="footer-form">
-                  <b class="title-email-input">подпишитесь на рассылку</b>
                   <label class="footer-label" for="modal-text">
                   <input 
                     type="email"
@@ -425,13 +425,16 @@
                   />
                   <button class="footer-submit" type="submit">
                   <span class="footer-span">Подписаться</span>
+                    <svg class="icon-send" width="25" height="25">
+                      <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                    </svg>
                   </button>
                   </label>
                 </form>
               </div>
           </div>
     </footer>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop" data-modal>
             <div class="modal">
               <button type="button" class="close-modal" data-modal-close>
                 <svg class="close-button" width="20" height="20">
@@ -505,10 +508,16 @@
                   type="checkbox" 
                   name="privacy" 
                   id="privacy" 
-                  class="input-check"
+                  class="input-check visually-hidden"
                   />
                   <label for="privacy" class="check-text"
-                  >Соглашаюсь с рассылкой и принимаю <a href="" class="link-check">Условия договора</a>
+                  ><span>
+                    <svg class="check-icon" width="11" height="8">
+                    <use 
+                      href="./images/symbol-defs.svg#icon-check">
+                    </use>
+                  </svg>
+                  </span> Соглашаюсь с рассылкой и принимаю &nbsp;<a href="" class="link-check">Условия договора</a>
                   </label>
                 </div>
                 <button type="submit" class="button modal-button">Отправить</button>
