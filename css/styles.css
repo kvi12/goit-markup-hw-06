@@ -232,16 +232,16 @@ a {
 .button {
   width: 200px;
   height: 50px;
-  display: inline-block;
+  /* display: inline-block; */
   background-color: var(--accent-color);
-  padding: 5px 32px;
+  /* padding: 5px 32px; */
   border-radius: 4px;
   color: var(--header-color);
   border: var(--header-color);
   cursor: pointer;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   text-align: center;
-  padding: 10px 32px;
+  /* padding: 10px 32px; */
   font-weight: 700;
   font-size: 16px;
   transition: background-color var(--time-animations) var(--function-animations),
@@ -823,10 +823,7 @@ a {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--time-animations) var(--function-animations);
-  padding-top: 39px;
-  padding-right: 40px;
-  padding-bottom: 37px;
-  padding-left: 40px;
+  padding: 40px;
 }
 .close-modal {
   position: absolute;
@@ -852,14 +849,17 @@ a {
   pointer-events: none;
 }
 .modal-title {
-  font-style: 20px;
-  font-weight: 700;
-  line-height: calc(23 / 20);
-  letter-spacing: 3%;
-  text-transform: uppercase;
+  display: block;
+  width: 448px;
+  height: 23px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--header-logo-color);
-  margin-bottom: 12px;
 }
 .modal-form {
   margin: 0 auto;
@@ -887,8 +887,12 @@ a {
   transition: 250ms linear fill;
 }
 .modal-button {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 120px;
+  margin-right: 132px;
 }
 .modal-label {
   font-family: Roboto;
@@ -898,15 +902,15 @@ a {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--second-title-color);
-  margin-top: -4px;
+  margin-top: 10px;
+  fill: var(--accent-color);
 }
 .modal-text-area:focus {
   border-color: currentColor;
 }
 .modal-field {
-  margin-top: 20px;
+  margin-top: 10px;
   display: block;
-  margin-bottom: 10px;
   position: relative;
 }
 .label-modal {
@@ -940,6 +944,7 @@ a {
   color: var(--second-title-color);
   display: flex;
   align-items: center;
+  margin-top: 26px;
 }
 /* .check-text::before {
   content: '';
