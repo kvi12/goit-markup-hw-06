@@ -900,8 +900,7 @@ a {
   color: var(--second-title-color);
   margin-top: -4px;
 }
-.modal-field:hover,
-.modal-field:focus {
+.modal-text-area:hover {
   border-color: var(--accent-color);
 }
 .modal-field {
