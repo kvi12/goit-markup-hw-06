@@ -934,6 +934,10 @@ a {
   resize: none;
   padding: 10px;
 }
+.modal-text-area:hover,
+.modal-text-area:focus {
+  border-color: var(--accent-color);
+}
 .check-text {
   font-family: 'Roboto';
   font-style: normal;
