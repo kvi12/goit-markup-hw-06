@@ -934,8 +934,8 @@ a {
   resize: none;
   padding: 10px;
 }
-.modal-text-area:hover,
-.modal-text-area:focus {
+.modal-div:hover,
+.modal-div:focus {
   border-color: var(--accent-color);
 }
 .check-text {
@@ -950,21 +950,7 @@ a {
   align-items: center;
   margin-top: 26px;
 }
-/* .check-text::before {
-  content: '';
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--header-logo-color);
-  margin-right: 10px;
-  border-radius: 2px;
-}
-.input-check:checked + .check-text::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-} */
+
 .check-text span {
   width: 16px;
   height: 15px;
